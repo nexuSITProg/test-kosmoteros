@@ -1,0 +1,21 @@
+.seminar-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.delete-confirmation {
+  text-align: center;
+  padding: 20px;
+
+  p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .delete-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
