@@ -7,8 +7,8 @@ import "./SeminarList.style.scss";
 
 interface SeminarListProps {
   seminars: Seminar[]
-  onDelete: (id: number) => void
-  onUpdate: (id: number, seminar: Partial<Seminar>) => void
+  onDelete: (id: number) => Promise<void>
+  onUpdate: (id: number, seminar: Partial<Seminar>) => Promise<void>
 }
 
 // Принимает объект типа Seminar, функцию onDelete и onUpdate, для удаления и изменения объектов Seminar
